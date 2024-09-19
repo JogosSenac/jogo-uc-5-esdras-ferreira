@@ -6,8 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-   public void começar()
-   {
-    SceneManager.LoadScene("Inicio");
-   }
+    public void Começar()
+    {
+         SceneManager.LoadScene("Inicio");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("SAIU");
+    }
 }

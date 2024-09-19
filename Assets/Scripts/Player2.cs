@@ -102,24 +102,20 @@ public class Player2 : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Chão"))
+        if (other.gameObject.CompareTag("Chão"))
         {
             isJumping = false;
             doubleJumping = 0;
             animDoubleJump = false;
-            anim.SetLayerWeight(2,0);
-            anim.SetLayerWeight(4,0);
-            anim.SetLayerWeight(1,0);
-            anim.SetLayerWeight(3,0);
-            anim.SetLayerWeight(5,0);
-            anim.SetLayerWeight(6,0);
+            anim.SetLayerWeight(2, 0);
+            anim.SetLayerWeight(4, 0);
+            anim.SetLayerWeight(1, 0);
+            anim.SetLayerWeight(3, 0);
+            anim.SetLayerWeight(5, 0);
+            anim.SetLayerWeight(6, 0);
         }
 
-        if(other.gameObject.CompareTag("Spike"))
-        {
-            hitPlayer = true;
-        }
-    }
+    }   
 }
